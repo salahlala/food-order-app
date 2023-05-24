@@ -1,0 +1,66 @@
+.control {
+  display : flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+  width: 50%;
+
+}
+
+.control label {
+  font-weight: bold;
+}
+.control input {
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.control input:focus {
+  outline: none;
+}
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #8a2b06;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+}
+.actions button:disabled,
+.actions button:disabled:hover,
+.actions button:disabled:active {
+  background-color: #ccc;
+  color: #292929;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+.actions .button:hover,
+.actions .button:active {
+  background-color: #5a1a01;
+  border-color: #5a1a01;
+  color: white;
+}
+
+.actions .button--alt {
+  color: #8a2b06;
+}
+.actions .button {
+  background-color: #8a2b06;
+  color: white;
+}
+
+.error-text {
+  color: #882626
+}
+
+
+.invalid input {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+
+.invalid input:focus {
+  border-color: #ff8800;
+  background-color: #fbe8d2;
+}

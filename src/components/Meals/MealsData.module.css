@@ -1,0 +1,52 @@
+.meals {
+  max-width: 60rem;
+  width: 90%;
+  margin: 10rem auto; 
+  animation: meals-appear 1s ease-out forwards;
+  
+}
+
+.meals ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loading {
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.error-message h1 {
+  color: #922828;
+  font-size: 33px;
+}
+
+.error-message button {
+  color :#fff;
+  border:none;
+  border-radius: 3px;
+  padding: 5px 15px;
+  background-color: #922828;
+  cursor: pointer;
+  transition: .3s ;
+}
+
+.error-message button:active
+{
+  background-color: #c94343;
+}
+
+
